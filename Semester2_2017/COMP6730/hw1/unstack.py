@@ -6,7 +6,7 @@ def right_two_spaces():
     robot.drive_right()
     robot.drive_right()
 
-def left_two__spaces():
+def left_two_spaces():
     robot.drive_left()
     robot.drive_left()
 
@@ -63,6 +63,9 @@ def unstack_tower_of_three():
     right_two_spaces()
     # and do the unstacking manouvre twice
     unstack_to_the_left()
+    robot.lift_up()
+    robot.gripper_to_open()
+    robot.lift_down()
     unstack_to_the_left()
     
 def test_unstack_two():
